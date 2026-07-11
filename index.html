@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金門孔雀之亂｜一場美麗的錯誤 — 佑在幹嘛？</title>
+<meta name="description" content="1999 年一場颱風，14 隻藍孔雀逃出金門畜試所，如今暴增至逾兩千隻。這是一篇關於外來種、農損、生態與人的兩難的深度報導。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rice:#EFE3C4;     /* 米袋黃 底色 */
+  --rice-lt:#F5EDD8;  /* 米袋淺 卡片底 */
+  --kraft:#E3D3AC;    /* 牛皮深 */
+  --indigo:#2C4A6B;   /* 老靛藍 */
+  --seal:#B8402C;     /* 米袋紅 */
+  --gold:#A87F2E;     /* 燙金 */
+  --ink:#3A3226;      /* 茶墨 */
+  --grey:#7C7060;     /* 註記 */
+  --peacock:#1E6B6B;  /* 孔雀綠 */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--rice);color:var(--ink);font-family:"Noto Serif TC","Songti TC","Source Han Serif TC",serif;line-height:1.95}
+.sans{font-family:"Noto Sans TC","PingFang TC",sans-serif}
+a{color:inherit}
+img{max-width:100%}
+.frame{max-width:1060px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px;margin:0 auto;padding:0 20px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
+
+.band{height:14px;background:repeating-linear-gradient(90deg,var(--seal) 0 44px,var(--rice) 44px 55px,var(--indigo) 55px 99px,var(--rice) 99px 110px)}
+.btn{display:inline-block;text-decoration:none;font-size:15.5px;letter-spacing:.22em;padding:13px 28px;border:2px solid var(--ink);color:var(--ink);font-weight:600;background:var(--rice);transition:transform .15s,box-shadow .15s}
+.btn:hover{box-shadow:4px 4px 0 var(--ink);transform:translate(-3px,-3px)}
+.btn.fill{background:var(--seal);border-color:var(--seal);color:var(--rice)}
+.btn.fill:hover{background:#9C3423}
+.btn.big{font-size:18px;padding:16px 40px}
+.sec-head{text-align:center;margin-bottom:38px}
+.sec-head .tag{display:inline-block;border:1.5px solid var(--indigo);color:var(--indigo);font-size:12px;letter-spacing:.4em;padding:4px 16px}
+.sec-head h2{font-size:clamp(24px,3.6vw,33px);font-weight:900;letter-spacing:.12em;margin-top:14px;line-height:1.5}
+.sec-head p{font-size:14px;color:var(--grey);letter-spacing:.1em;margin-top:8px}
+section{padding:78px 0}
+
+/* 導覽列 */
+nav{border-bottom:2px solid var(--ink);background:var(--rice);position:sticky;top:0;z-index:50}
+nav .inner{max-width:1060px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:44px;width:auto;display:block}
+@media(max-width:520px){.brand img{height:36px}}
+
+/* Hero Banner */
+.hero-banner{border-bottom:2px solid var(--ink);width:100%;display:block;overflow:hidden;background:var(--rice-lt);max-height:300px}
+.hero-banner img{width:100%;height:auto;display:block}
+nav ul{display:none;list-style:none;align-items:center;gap:24px}
+@media(min-width:820px){nav ul{display:flex}}
+nav ul a{text-decoration:none;font-size:14.5px;letter-spacing:.18em}
+nav ul a.cta{background:var(--seal);color:var(--rice);padding:9px 18px;font-weight:700}
+.menu-x{display:block;font-size:13px;letter-spacing:.3em;color:var(--grey)}
+@media(min-width:820px){.menu-x{display:none}}
+
+/* HERO */
+.hero{border-bottom:2px solid var(--ink);position:relative;overflow:hidden}
+.hero .inner{max-width:1060px;margin:0 auto;padding:60px 20px 66px;position:relative;z-index:2}
+@media(min-width:840px){.hero .inner{display:flex;gap:44px;align-items:center;padding:84px 20px 88px}}
+.hero .mid{flex:1}
+.hero .origin{display:inline-block;border:1.5px solid var(--seal);color:var(--seal);font-size:12px;letter-spacing:.34em;padding:5px 15px;margin-bottom:20px}
+.hero h1{font-size:clamp(30px,5.4vw,52px);font-weight:900;letter-spacing:.14em;line-height:1.42}
+.hero h1 em{font-style:normal;color:var(--seal)}
+.hero .dek{font-size:16px;margin:22px 0 30px;max-width:520px;color:#4a4132}
+.hero .meta{font-size:12.5px;letter-spacing:.16em;color:var(--grey);margin-bottom:26px}
+.hero .art{flex:none;width:min(320px,80%);margin:36px auto 0}
+@media(min-width:840px){.hero .art{margin:0}}
+
+/* 前言 */
+.lede{background:var(--rice-lt);border-bottom:2px solid var(--ink)}
+.lede .frame{padding:56px 20px}
+.lede p{font-size:clamp(17px,2.2vw,20px);line-height:2.1;max-width:820px;margin:0 auto;text-align:center;letter-spacing:.03em}
+.lede .drop::first-letter{font-size:2.6em;font-weight:900;color:var(--seal);float:left;line-height:.9;margin:6px 12px 0 0}
+
+/* 內文 */
+.prose p{font-size:16.5px;line-height:2.15;margin:0 auto 1.5em;max-width:760px;letter-spacing:.02em}
+.prose h3{font-size:clamp(20px,2.6vw,25px);font-weight:900;letter-spacing:.1em;max-width:760px;margin:0 auto 18px;padding-left:16px;border-left:6px solid var(--seal)}
+.prose .lead-q{max-width:760px;margin:0 auto 40px;font-size:15px;color:var(--grey);letter-spacing:.06em}
+.pull{max-width:760px;margin:36px auto;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:26px 4px;text-align:center}
+.pull b{font-size:clamp(20px,3vw,27px);font-weight:900;letter-spacing:.08em;line-height:1.7;color:var(--seal)}
+.pull small{display:block;margin-top:12px;font-size:13px;color:var(--grey);letter-spacing:.12em}
+
+/* 圖片與新聞剪報 */
+figure{max-width:760px;margin:36px auto 40px}
+figure.wide{max-width:1000px}
+figcaption{font-size:12.5px;color:var(--grey);letter-spacing:.05em;line-height:1.7;margin-top:12px;padding-left:14px;border-left:3px solid var(--kraft)}
+.clip{border:2px solid var(--ink);background:var(--rice-lt);box-shadow:6px 6px 0 rgba(58,50,38,.12)}
+.clip .clip-bar{display:flex;align-items:center;gap:8px;background:var(--ink);padding:8px 14px}
+.clip .clip-bar span.dot{width:11px;height:11px;border-radius:50%;background:var(--rice)}
+.clip .clip-bar .out{margin-left:8px;color:var(--rice);font-size:12px;letter-spacing:.16em;font-family:"Noto Sans TC",sans-serif}
+.clip .clip-bar .date{margin-left:auto;color:#C7BDA5;font-size:11.5px;letter-spacing:.1em;font-family:"Noto Sans TC",sans-serif}
+.clip .shot{position:relative;background:var(--kraft);background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.14) 0 2px,transparent 2px 11px)}
+.clip .shot .inner{padding:30px 26px 34px}
+.clip .kicker{display:inline-block;background:var(--seal);color:var(--rice);font-size:11px;letter-spacing:.24em;padding:3px 12px;margin-bottom:14px;font-family:"Noto Sans TC",sans-serif}
+.clip .head{font-size:clamp(19px,2.8vw,26px);font-weight:900;letter-spacing:.04em;line-height:1.6;color:var(--ink)}
+.clip .sub{font-size:14px;color:#54493a;margin-top:12px;line-height:1.85;max-width:560px}
+.clip .byl{margin-top:18px;font-size:12px;letter-spacing:.14em;color:var(--grey);font-family:"Noto Sans TC",sans-serif;border-top:1px dashed rgba(58,50,38,.35);padding-top:12px}
+
+/* 卡片格 */
+.cards{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:720px){.cards.c3{grid-template-columns:repeat(3,1fr)}.cards.c2{grid-template-columns:repeat(2,1fr)}}
+.card{border:2px solid var(--ink);background:var(--rice-lt);padding:22px 20px 24px}
+.card .no{font-size:11px;letter-spacing:.3em;color:var(--gold)}
+.card b{display:block;font-size:18px;font-weight:900;letter-spacing:.08em;margin:8px 0 10px}
+.card p{font-size:14px;color:#54493a;line-height:1.9}
+
+/* 時間軸 */
+.timeline{max-width:780px;margin:0 auto;position:relative}
+.timeline::before{content:"";position:absolute;left:78px;top:8px;bottom:8px;width:2px;background:var(--ink)}
+@media(max-width:560px){.timeline::before{left:58px}}
+.tl{display:flex;gap:22px;margin-bottom:30px;position:relative}
+.tl .yr{flex:none;width:58px;text-align:right;font-family:"Noto Sans TC",sans-serif;font-weight:900;font-size:17px;color:var(--seal);padding-top:1px}
+.tl .node{flex:none;width:16px;height:16px;border-radius:50%;background:var(--rice);border:3px solid var(--ink);margin-top:4px;z-index:2}
+.tl .body{flex:1;padding-bottom:2px}
+.tl .body b{display:block;font-size:16px;letter-spacing:.04em;margin-bottom:5px}
+.tl .body p{font-size:14px;color:#54493a;line-height:1.85}
+
+/* 數據帶 */
+.stats{background:var(--indigo);color:var(--rice);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.stats .grid{max-width:940px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:34px 20px}
+@media(min-width:720px){.stats .grid{grid-template-columns:repeat(4,1fr)}}
+.stat{text-align:center}
+.stat .num{font-family:"Noto Sans TC",sans-serif;font-weight:900;font-size:clamp(34px,6vw,50px);line-height:1;color:#F0D98A}
+.stat .lab{font-size:13px;letter-spacing:.14em;margin-top:12px;color:#D8CDB2;line-height:1.7}
+
+/* 圖表 */
+.chartbox{max-width:820px;margin:0 auto;border:2px solid var(--ink);background:var(--rice-lt);padding:30px 24px 24px}
+.chartbox h4{text-align:center;font-size:16px;letter-spacing:.1em;font-weight:900;margin-bottom:6px}
+.chartbox .cap{text-align:center;font-size:12.5px;color:var(--grey);margin-bottom:26px;letter-spacing:.06em}
+.bars{display:flex;align-items:flex-end;justify-content:space-around;gap:10px;height:240px;border-bottom:2px solid var(--ink);padding:0 4px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bar .b{width:100%;max-width:56px;background:var(--seal);border:2px solid var(--ink);border-bottom:none;position:relative;transition:height .6s}
+.bar .b .v{position:absolute;top:-24px;left:0;right:0;text-align:center;font-family:"Noto Sans TC",sans-serif;font-weight:700;font-size:13.5px;color:var(--ink)}
+.bar.est .b{background:var(--kraft);background-image:repeating-linear-gradient(-45deg,var(--seal) 0 3px,transparent 3px 9px)}
+.bar .yl{margin-top:10px;font-family:"Noto Sans TC",sans-serif;font-size:13px;font-weight:700;color:var(--ink)}
+.bar .yl small{display:block;font-weight:400;font-size:10.5px;color:var(--grey);letter-spacing:.05em}
+
+/* 引言區 */
+.quotesec{background:var(--rice-lt);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qgrid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:720px){.qgrid{grid-template-columns:repeat(2,1fr)}}
+.quote{border:2px solid var(--ink);background:var(--rice);padding:28px 26px}
+.quote .mk{font-size:40px;color:var(--seal);font-weight:900;line-height:.6;font-family:Georgia,serif}
+.quote p{font-size:16px;line-height:1.95;margin:14px 0 16px;letter-spacing:.02em}
+.quote .who{font-size:13px;color:var(--grey);letter-spacing:.1em;font-family:"Noto Sans TC",sans-serif;border-top:1px solid var(--kraft);padding-top:12px}
+.quote .who b{color:var(--ink)}
+
+/* 兩難 */
+.dilemma{max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:0;border:2px solid var(--ink)}
+@media(min-width:720px){.dilemma{grid-template-columns:1fr 1fr}}
+.dil-col{padding:30px 26px}
+.dil-col.a{background:var(--rice-lt);border-bottom:2px solid var(--ink)}
+.dil-col.b{background:var(--kraft)}
+@media(min-width:720px){.dil-col.a{border-bottom:none;border-right:2px solid var(--ink)}}
+.dil-col .h{font-size:17px;font-weight:900;letter-spacing:.08em;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.dil-col ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.dil-col li{font-size:14.5px;line-height:1.8;padding-left:20px;position:relative}
+.dil-col li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border:2px solid var(--seal)}
+
+/* CTA */
+.cta{border-top:2px solid var(--ink)}
+.cta-box{max-width:660px;margin:0 auto;border:2px solid var(--ink);background:var(--rice-lt);box-shadow:8px 8px 0 rgba(58,50,38,.14)}
+.cta-box .inner{padding:48px 26px 44px;text-align:center}
+@media(min-width:640px){.cta-box .inner{padding:56px 56px 48px}}
+.cta-box h2{font-size:clamp(25px,4vw,33px);font-weight:900;letter-spacing:.12em;line-height:1.5}
+.cta-box .lead{font-size:15.5px;color:#54493a;margin:18px auto 8px;max-width:480px;line-height:2}
+.cta-box .go{margin-top:30px}
+.cta-box .fine{margin-top:22px;font-size:12.5px;color:var(--grey);letter-spacing:.08em}
+
+/* Footer */
+footer{border-top:2px solid var(--ink);background:var(--ink);color:var(--rice)}
+footer .inner{max-width:1060px;margin:0 auto;padding:44px 20px 36px}
+footer .cols{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+footer .brandline b{font-size:20px;font-weight:900;letter-spacing:.2em}
+footer .brandline p{font-size:13px;color:#C7BDA5;margin-top:6px;letter-spacing:.08em;max-width:320px;line-height:1.8}
+footer ul{list-style:none;display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;letter-spacing:.15em}
+footer a{text-decoration:none}
+footer .fine{margin-top:30px;padding-top:18px;border-top:1px solid #5A5142;font-size:12px;color:#A89C82;letter-spacing:.08em;line-height:1.9}
+.srclist{max-width:1060px;margin:0 auto;padding:0 20px}
+.srclist details{border:2px solid #5A5142;background:#453d2f;margin-top:8px}
+.srclist summary{cursor:pointer;padding:14px 18px;font-size:13.5px;letter-spacing:.14em;color:var(--rice);font-family:"Noto Sans TC",sans-serif}
+.srclist .srcbody{padding:4px 20px 20px;font-size:12.5px;color:#C7BDA5;line-height:2;font-family:"Noto Sans TC",sans-serif}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="佑在幹嘛？"></a>
+    <ul>
+      <li><a href="#story">怎麼開始的</a></li>
+      <li><a href="#data">數字現場</a></li>
+      <li><a href="#harm">生態衝擊</a></li>
+      <li><a href="#dilemma">美麗的兩難</a></li>
+      <li><a class="cta" href="#support">支持贊助我們</a></li>
+    </ul>
+    <span class="menu-x">選單</span>
+  </div>
+</nav>
+
+<!-- HERO BANNER -->
+<a class="hero-banner" href="#top" aria-label="佑在幹嘛？"><img src="assets/banner.webp" alt="佑在幹嘛？ Ze You ♥ Winnie"></a>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="band"></div>
+  <div class="inner">
+    <div class="mid">
+      <span class="origin">時 事 現 場　KINMEN・2026</span>
+      <h1>金門孔雀之亂<br><em>一場美麗的錯誤</em></h1>
+      <p class="dek">一九九九年，一場颱風吹垮了畜試所的鐵籠。十四隻藍孔雀走進金門的荒煙蔓草，二十多年後，官方推估已逾兩千隻、並持續朝三千逼近，成了趕也趕不完的生態難題。這是一個關於外來種、農損，以及「該怎麼辦」的故事。</p>
+      <p class="meta">深度整理・佑在幹嘛？編輯室　｜　閱讀約 8 分鐘</p>
+      <a class="btn fill" href="#story">從頭讀起</a>　<a class="btn" href="#support">支持這樣的內容</a>
+    </div>
+    <div class="art">
+      <!-- 藍孔雀插畫 -->
+      <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="藍孔雀插畫">
+        <ellipse cx="150" cy="300" rx="120" ry="12" fill="#E3D3AC"/>
+        <!-- 開屏羽扇 -->
+        <g stroke="#2C4A6B" stroke-width="2" fill="none" opacity=".9">
+          <path d="M150 200 Q60 150 40 60"/><path d="M150 200 Q80 130 78 40"/>
+          <path d="M150 200 Q110 120 120 30"/><path d="M150 200 Q150 115 150 26"/>
+          <path d="M150 200 Q190 120 180 30"/><path d="M150 200 Q220 130 222 40"/>
+          <path d="M150 200 Q240 150 260 60"/>
+        </g>
+        <g>
+          <circle cx="40" cy="60" r="13" fill="#1E6B6B"/><circle cx="40" cy="60" r="6" fill="#A87F2E"/>
+          <circle cx="78" cy="40" r="13" fill="#1E6B6B"/><circle cx="78" cy="40" r="6" fill="#A87F2E"/>
+          <circle cx="120" cy="30" r="13" fill="#1E6B6B"/><circle cx="120" cy="30" r="6" fill="#A87F2E"/>
+          <circle cx="150" cy="26" r="13" fill="#1E6B6B"/><circle cx="150" cy="26" r="6" fill="#A87F2E"/>
+          <circle cx="180" cy="30" r="13" fill="#1E6B6B"/><circle cx="180" cy="30" r="6" fill="#A87F2E"/>
+          <circle cx="222" cy="40" r="13" fill="#1E6B6B"/><circle cx="222" cy="40" r="6" fill="#A87F2E"/>
+          <circle cx="260" cy="60" r="13" fill="#1E6B6B"/><circle cx="260" cy="60" r="6" fill="#A87F2E"/>
+        </g>
+        <!-- 身體 -->
+        <ellipse cx="150" cy="235" rx="34" ry="46" fill="#2C4A6B"/>
+        <circle cx="150" cy="185" r="20" fill="#1E6B6B"/>
+        <path d="M150 168 l-4 -16 l8 0 z" fill="#1E6B6B"/>
+        <circle cx="150" cy="150" r="4" fill="#1E6B6B"/>
+        <circle cx="143" cy="183" r="2.5" fill="#EFE3C4"/>
+        <path d="M150 190 l10 4 l-10 4" fill="#A87F2E"/>
+        <path d="M150 275 l-8 26 M150 275 l8 26" stroke="#3A3226" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="net" style="position:absolute;bottom:14px;right:22px;font-size:11px;letter-spacing:.22em;color:var(--grey)">外來種・農損・生態・動物倫理</div>
+  </div>
+</header>
+
+<!-- 前言 -->
+<div class="lede">
+  <div class="frame">
+    <p class="drop">在金門的清晨三、四點，一種尖銳的鳴叫會劃破薄霧。那不是雞、不是鳥類保護區的過境嬌客，而是一隻站在廢棄營區屋頂上的藍孔雀。牠很美，開屏的時候整個尾扇像一片會發光的星空——但金門人愈來愈笑不出來。因為這座島，正被牠們一步步吃掉。</p>
+  </div>
+</div>
+
+<!-- 故事的開始 -->
+<section id="story" class="prose">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">怎 麼 開 始 的</span>
+      <h2>從一場颱風，到一場失控</h2>
+      <p>美麗，往往是麻煩的開始</p>
+    </div>
+
+    <p class="lead-q">要理解金門的孔雀為什麼變成問題，得先回到一九九九年那場颱風。</p>
+    <p>藍孔雀（<span class="sans">Indian peafowl</span>）原產於印度、斯里蘭卡一帶，是不折不扣的外來種。牠們當年被引進金門，是作為畜產試驗所的觀賞禽鳥飼養，關在籠子裡供人欣賞。誰也沒想到，一場<b>丹恩颱風</b>會把試驗所的鐵籠吹垮。約十四隻藍孔雀趁隙逃進野外，開始了牠們在金門的第二人生。</p>
+    <p>當時多數人並不擔心。畢竟這是熱帶的觀賞鳥，一般認為「應該不容易在野外存活」。但金門給了牠們近乎完美的生存條件——這裡有數百座<b>荒廢的戰地營區</b>可以躲藏築巢，有金門高粱酒廠排出的<b>酒糟</b>當作源源不絕的免費飼料，最重要的是，這座島上<b>沒有任何天敵</b>能制得住牠們。</p>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">我們的島・公視</span><span class="date">生態紀實報導</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">生態紀實</span>
+          <div class="head">戰地藍孔雀：怎麼會從「聖鳥」變成破壞在地生態的鳥類？</div>
+          <div class="sub">十多年前逃逸的十四隻孔雀，如今在金門估計已達一千四百隻。牠們躲進廢棄營區、吃高粱酒糟，缺乏天敵讓族群一路失控——一種被視為吉祥的鳥，正在改寫這座島的生態。</div>
+          <div class="byl">節目報導・公視《我們的島》</div>
+        </div></div>
+      </div>
+      <figcaption>來源：公視《我們的島》〈戰地藍孔雀｜怎麼會從聖鳥變成破壞在地生態的鳥類〉專題報導。上圖為依報導內容重製之新聞示意卡，非原始畫面。</figcaption>
+    </figure>
+
+    <h3>十四隻，怎麼變成兩千隻</h3>
+    <p>孔雀的繁殖力驚人。逃逸初期，牠們只是零星出現在田邊、林間，被當成新鮮的風景。但外來種一旦沒有天敵，數量就會沿著指數曲線往上竄。畜試所委託學者做的野外調查最能說明這件事：孔雀的<b>觀察次數從二○一一年的兩百五十二次，暴增到二○二○年的一千三百五十三次</b>，短短九年成長超過五倍。</p>
+    <p>到了近年，官方推估金門野外的藍孔雀族群已經<b>突破兩千隻，而且還在倍速成長</b>。更讓人心驚的是繁殖速度：金門建設處農林科科長鐘立偉推估，在缺乏天敵、食物又充足的條件下，光是<b>一年新生的孔雀就可能多達一千兩百多隻</b>——換句話說，實際族群很可能早已一路朝<b>三千隻</b>逼近。從十四隻到逼近三千，這不是自然界的浪漫故事，而是一個外來種入侵的教科書案例。</p>
+
+    <div class="pull">
+      <b>「在台灣北部抓老鼠、南部抓綠鬣蜥，<br>在金門，抓的是會飛、有高度的藍孔雀。」</b>
+      <small>— 這句在金門大學演講中的比喻，道盡了這場人與鳥的追逐戰有多難打</small>
+    </div>
+
+    <!-- 時間軸 -->
+    <div class="timeline">
+      <div class="tl"><div class="yr">1999</div><div class="node"></div><div class="body"><b>颱風吹垮鐵籠</b><p>丹恩颱風重創金門畜試所，約 14 隻觀賞用藍孔雀逃逸至野外，落地生根。</p></div></div>
+      <div class="tl"><div class="yr">2010</div><div class="node"></div><div class="body"><b>政府開始補助移除</b><p>農委會林務局（今林業及自然保育署）補助金門縣府執行孔雀移除計畫。</p></div></div>
+      <div class="tl"><div class="yr">2011</div><div class="node"></div><div class="body"><b>族群曲線起飛</b><p>學者野外調查全年觀察到孔雀 252 次，數量開始明顯攀升。</p></div></div>
+      <div class="tl"><div class="yr">2018</div><div class="node"></div><div class="body"><b>祭出「懸賞收購」</b><p>縣府對民眾捕獲的孔雀，以每隻新台幣 600 元收購，鼓勵全民參與。</p></div></div>
+      <div class="tl"><div class="yr">2020</div><div class="node"></div><div class="body"><b>失控成定局</b><p>全年觀察次數飆到 1,353 次，官方估計野外族群介於 1,000 至 2,000 隻。</p></div></div>
+      <div class="tl"><div class="yr">2026</div><div class="node"></div><div class="body"><b>單年移除近兩千</b><p>族群推估逾 2,000 隻、恐朝 3,000 逼近，縣府預估本年度需移除 1,950 隻——仍趕不上繁殖速度。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 數據帶 -->
+<section class="stats" style="padding:60px 0">
+  <div class="frame">
+    <div class="grid">
+      <div class="stat"><div class="num">14</div><div class="lab">1999 年逃逸的<br>孔雀隻數</div></div>
+      <div class="stat"><div class="num">2,000<span style="font-size:.5em">+</span></div><div class="lab">官方推估族群量<br>恐已朝三千逼近</div></div>
+      <div class="stat"><div class="num">1,200<span style="font-size:.5em">+</span></div><div class="lab">單年新生孔雀<br>推估隻數</div></div>
+      <div class="stat"><div class="num">1,950</div><div class="lab">2026 年<br>預估移除隻數</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 數字現場：移除量圖表 -->
+<section id="data" class="prose">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">數 字 現 場</span>
+      <h2>移除量五年翻五倍，還是追不上</h2>
+      <p>當「抓得愈來愈多」不代表「問題變小」</p>
+    </div>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">自由時報</span><span class="date">2026.06.01・最新</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">最新進度</span>
+          <div class="head">藍孔雀危害金門農作　今年預估移除 1,950 隻</div>
+          <div class="sub">最新統計顯示，金門藍孔雀移除量近五年逼近倍數成長——從 2022 年的 393 隻，一路攀升到 2026 年預估的 1,950 隻。牠們最愛啃食酒糟、蔬果、嫩葉，甚至高粱、小麥，縣府以每隻 600 元收購鼓勵民眾協助捕捉。</div>
+          <div class="byl">最新報導・自由時報（2026 年 6 月 1 日）</div>
+        </div></div>
+      </div>
+      <figcaption>來源：自由時報〈藍孔雀危害金門農作 今年預估移除1950隻〉（2026 年 6 月 1 日刊出）。上圖為依報導內容重製之新聞示意卡。</figcaption>
+    </figure>
+
+    <p>如果只看移除數字，金門縣府其實愈來愈拚。委託廠商在野外架設大型陷阱籠，加上民眾懸賞捕捉，每年送進收容的孔雀節節上升。但問題在於——移除量的成長曲線，和族群的成長曲線幾乎是<b>並肩往上衝</b>。抓得再多，只是勉強跟上牠們生小孩的速度。</p>
+
+    <figure class="wide">
+      <div class="chartbox">
+        <h4>金門藍孔雀歷年移除數量</h4>
+        <div class="cap">單位：隻　｜　2026 年為預估值（斜紋柱）</div>
+        <div class="bars">
+          <div class="bar"><div class="b" style="height:20%"><span class="v">393</span></div><div class="yl">2022</div></div>
+          <div class="bar"><div class="b" style="height:27%"><span class="v">529</span></div><div class="yl">2023</div></div>
+          <div class="bar"><div class="b" style="height:36%"><span class="v">701</span></div><div class="yl">2024</div></div>
+          <div class="bar"><div class="b" style="height:69%"><span class="v">1,341</span></div><div class="yl">2025</div></div>
+          <div class="bar est"><div class="b" style="height:100%"><span class="v">1,950</span></div><div class="yl">2026<small>預估</small></div></div>
+        </div>
+      </div>
+      <figcaption>來源：金門縣政府移除計畫統計，自由時報〈藍孔雀危害金門農作 今年預估移除1950隻〉（2026.06.01）整理。2026 年為官方預估值。圖表由佑在幹嘛？依公開數據繪製。</figcaption>
+    </figure>
+
+    <p>這五年間，年移除量從三百多隻一路衝到近兩千隻，成長將近五倍。數字很努力，但基層人員清楚知道那是什麼感覺——中山大學團隊協助改用網羅方式提高捕獲率後仍發現，早年<b>平均一年只抓得到約三十隻</b>，遠遠「趕不上藍孔雀的繁殖速度」。孔雀又聰明、又會飛，設一次陷阱牠們就學乖，「不會犯第二次錯」，人類在這場鬥智戰裡始終居於下風。</p>
+
+    <p>面對這條追不上的曲線，金門縣政府也升高了層級。金門縣長<b>陳福海</b>已指示成立<b>專責小組</b>，規畫一套「<b>前兩年有效處理、第三年達標</b>」的三年移除計畫，試圖用更有系統的方式壓制族群。這是目前官方端出最完整的一步——但正如評論者李金生所提醒的，長期而言仍需要「公部門的持續監測」，以及「更多公民力量的參與和協助」，才可能在生態保育與生態旅遊之間，取得那個難以拿捏的平衡。</p>
+  </div>
+</section>
+
+<!-- 生態衝擊 -->
+<section id="harm" class="prose" style="background:var(--rice-lt);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">生 態 衝 擊</span>
+      <h2>牠不只是吵，牠在改寫食物鏈</h2>
+      <p>一隻沒有天敵的雜食性大型鳥，代表什麼</p>
+    </div>
+
+    <p>很多人以為孔雀頂多吃點穀子、擾人清夢。但真正讓生態學者擔心的，是牠的<b>食性太廣、體型太大、又完全沒有天敵</b>這三件事加在一起。藍孔雀是雜食性動物，除了種子、稻作、水果，牠<b>也會吃其他鳥類的蛋和雛鳥，甚至捕食青蛙、蛇、蜥蜴</b>等小型爬蟲。換句話說，牠同時是消費者，也是掠食者。</p>
+
+    <div class="cards c3" style="margin:40px auto">
+      <div class="card"><span class="no sans">01</span><b>跟原生種搶飯吃</b><p>在食物與棲地的競爭上，體型碩大的孔雀幾乎「穩贏不輸」，壓縮金門原生鳥類與小動物的生存空間。</p></div>
+      <div class="card"><span class="no sans">02</span><b>吃光原生種子</b><p>報導指出孔雀會把金門特有植物的種子大量啃食殆盡，直接衝擊在地植群的自然更新。</p></div>
+      <div class="card"><span class="no sans">03</span><b>威脅過境候鳥</b><p>金門是重要的候鳥過境地，強勢外來種一旦改變地面生態，連帶影響的是整個候鳥棲地系統。</p></div>
+    </div>
+
+    <div class="pull">
+      <b>「孔雀跟其他物種競爭，<br>是『穩贏不輸』。」</b>
+      <small>— 野生動物救援暨保育協會理事長陳光耀，談外來種為何危險</small>
+    </div>
+
+    <p>生態學上有個共識：外來種入侵是全球生物多樣性流失的主因之一。日本研究外來種的兵庫縣立大學太田英利教授就直言，外來種入侵不只威脅生物多樣性，一旦原生物種消失，「很多原本的價值和惠益，也就跟著消失了」。金門的問題在於，牠來得太久、繁殖太快，早已不是「防堵」階段，而是「壓制」階段。</p>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">聯合新聞網・倡議家</span><span class="date">永續地球</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">生態難題</span>
+          <div class="head">金門藍孔雀為患！數量已破兩千隻　獵捕趕不上繁殖速度</div>
+          <div class="sub">不只外來魚種入侵，會飛、移動快、又沒有天敵的藍孔雀，成了金門最棘手的外來種難題。學者示警：若不儘速移除，族群還會倍數成長。</div>
+          <div class="byl">整理報導・聯合新聞網／倡議家</div>
+        </div></div>
+      </div>
+      <figcaption>來源：聯合新聞網／倡議家〈金門藍孔雀為患！數量已破2千隻 獵捕趕不上繁殖速度〉、〈不只外來魚種入侵…金門藍孔雀為患也成生態難題〉。上圖為依報導內容重製之新聞示意卡。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 農損與生活 -->
+<section class="prose">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">田 裡 與 屋 簷 下</span>
+      <h2>農民的損失，居民的失眠</h2>
+      <p>生態帳之外，還有一本民生帳</p>
+    </div>
+
+    <p>對金門農民來說，孔雀是實實在在的天災。牠們成群走進田裡，啃食的清單長得驚人——<b>高粱、小麥、地瓜、西瓜、花生、各種菜苗和嫩葉</b>，幾乎金門種什麼牠們就吃什麼。辛苦育好的菜苗一夜之間被踩踏刨食，農民只能眼睜睜看著。而金門的經濟命脈高粱，正是牠們最愛的目標之一。</p>
+
+    <div class="cards c2" style="margin:40px auto;max-width:760px">
+      <div class="card"><b>🌾 農損現場</b><p>受害作物涵蓋高粱、小麥、地瓜、西瓜、花生、菜苗與酒糟。孔雀成群覓食，對小農的打擊尤其沉重。</p></div>
+      <div class="card"><b>🔊 噪音擾民</b><p>每逢繁殖季，清晨三、四點的求偶鳴叫尖銳刺耳，長期讓住在營區、村落周邊的居民難以成眠。</p></div>
+      <div class="card"><b>✈️ 飛安疑慮</b><p>已具飛行能力的孔雀體型龐大，被認為對金門空運構成潛在的鳥擊（bird strike）風險。</p></div>
+      <div class="card"><b>🐾 金門新三寶</b><p>孔雀與水獺、緬甸蟒並稱金門戶外偶遇的「新三寶」，也成了攝影玩家追逐的奇景。</p></div>
+    </div>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">東森新聞 EBC</span><span class="date">2023.05.04</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">地方現場</span>
+          <div class="head">金門孔雀成災！14 隻暴增至 2 千隻　半夜叫聲超嚇人</div>
+          <div class="sub">從十四隻到逾兩千隻，孔雀闖進田裡吃作物、站上屋頂放聲鳴叫。美麗的開屏背後，是農民的損失與居民的失眠。</div>
+          <div class="byl">新聞報導・東森新聞</div>
+        </div></div>
+      </div>
+      <figcaption>來源：東森新聞〈金門孔雀成災！14隻暴增至2千隻 半夜叫聲超嚇人〉。上圖為依報導標題與內容重製之新聞示意卡，非原始新聞畫面。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 引言區 -->
+<section class="quotesec">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">現 場 的 聲 音</span>
+      <h2>他們怎麼看這件事</h2>
+    </div>
+    <div class="qgrid">
+      <div class="quote">
+        <div class="mk">“</div>
+        <p>孔雀跟其他物種競爭是「穩贏不輸」，如果再強勢下去，金門的原生物種可能因此消失。</p>
+        <div class="who"><b>陳光耀</b>／野生動物救援暨保育協會 理事長</div>
+      </div>
+      <div class="quote">
+        <div class="mk">“</div>
+        <p>若先推廣孔雀觀光，之後又必須撲殺，那會「很諷刺」；用觀光收入彌補農損，現在言之過早。</p>
+        <div class="who"><b>丁健剛</b>／金門縣政府觀光處 處長</div>
+      </div>
+      <div class="quote">
+        <div class="mk">“</div>
+        <p>圈養收容會遇到孔雀彼此的領域衝突、疾病控制與動物福利問題，並不是抓回來關起來就沒事。</p>
+        <div class="who">學者觀點／移除計畫協力團隊</div>
+      </div>
+      <div class="quote">
+        <div class="mk">“</div>
+        <p>若不儘速移除，未來孔雀的數量還會倍數成長。時間，站在孔雀那一邊。</p>
+        <div class="who"><b>鄭瓊珍</b>／中山大學研究團隊</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 美麗的兩難 -->
+<section id="dilemma" class="prose">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">美 麗 的 兩 難</span>
+      <h2>要撲殺，還是共存？</h2>
+      <p>這是一道沒有標準答案的題目</p>
+    </div>
+
+    <p>孔雀問題最難的地方，不在生物學，而在人心。牠是外來種、是農害、是生態威脅，這些都是事實；但牠同時也美得讓人不忍下手，在部分文化裡甚至是吉祥的「聖鳥」。於是金門陷入一種很典型的保育兩難——<b>該把牠當成必須清除的入侵者，還是可以共存、甚至變成觀光資產的居民？</b></p>
+
+    <div class="dilemma">
+      <div class="dil-col a">
+        <div class="h">🎯 主張積極移除</div>
+        <ul>
+          <li>外來種沒有天敵，放任等於讓原生物種付出代價。</li>
+          <li>族群已破兩千且倍速成長，時間拖愈久、成本愈高。</li>
+          <li>農損與飛安是現實壓力，農民等不起。</li>
+          <li>國際經驗顯示，外來種防治「早期壓制」最有效。</li>
+        </ul>
+      </div>
+      <div class="dil-col b">
+        <div class="h">🕊️ 主張謹慎與共存</div>
+        <ul>
+          <li>大規模撲殺涉及動物福利與人道爭議。</li>
+          <li>孔雀美麗且具文化意涵，有人主張發展在地觀光。</li>
+          <li>圈養收容有領域衝突、疾病與照養難題，非萬靈丹。</li>
+          <li>先推觀光、後又撲殺，將陷入道德與政策的矛盾。</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:40px">移除的手段本身也充滿掙扎。捕獲後究竟是圈養收容，還是安樂死？收容需要空間、經費與長期照養，還要處理孔雀之間的地盤打鬥與疾病；人道處理則觸動許多人的情感底線。這不是「抓起來就好」的簡單工程，而是每一步都要面對「我們該怎麼對待一個我們自己帶來、卻又養不起的生命」的提問。</p>
+
+    <div class="pull">
+      <b>孔雀沒有做錯任何事。<br>做決定的一直都是人。</b>
+      <small>一場颱風之後的二十多年，這句話始終成立</small>
+    </div>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">窩窩 wuo-wuo</span><span class="date">動物議題・獨立媒體</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">動物倫理</span>
+          <div class="head">逃脫的金門藍孔雀數量暴增十倍　外來種成環境潛在威脅</div>
+          <div class="sub">從動物福利的角度看，外來種的困境從來不只是「移除」兩個字。如何在生態保育與人道對待之間找到平衡，是這場孔雀之亂留給所有人的難題。</div>
+          <div class="byl">專題報導・窩窩｜專注為動物發聲的獨立媒體</div>
+        </div></div>
+      </div>
+      <figcaption>來源：窩窩 wuo-wuo〈窩時事｜逃脫的金門藍孔雀數量暴增十倍 外來種成環境潛在威脅〉。上圖為依報導內容重製之新聞示意卡。</figcaption>
+    </figure>
+
+    <h3>牠會不會「飛」到台灣本島？</h3>
+    <p>金門的教訓，值得整個台灣記住。任何一種被引進的觀賞動物——不管是孔雀、綠鬣蜥、還是水族箱裡的魚——只要有一天逃進沒有天敵的環境、又剛好適應了氣候，就可能複製同一套劇本。外來種問題真正的成本，往往在「當初覺得沒關係」的那一刻就已經埋下。金門的兩千隻孔雀，是用二十多年、無數農損和一場又一場捕不完的追逐，替我們上的一堂昂貴的課。</p>
+  </div>
+</section>
+
+<!-- 餐桌上的孔雀 -->
+<section class="prose" style="background:var(--rice-lt);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)">
+  <div class="frame">
+    <div class="sec-head">
+      <span class="tag">生 態 廚 師 的 提 問</span>
+      <h2>把牠吃掉，算不算一種解法？</h2>
+      <p>當移除變成一道料理，我們該怎麼想</p>
+    </div>
+
+    <p>身為一個生態廚師，我對金門孔雀這件事，特別過不去。因為在移除的各種手段裡，有一個選項最直接、也最讓人五味雜陳——<b>把牠端上餐桌</b>。金門縣政府確實曾經開發過孔雀料理，金城市區也有餐廳推出過「孔雀大餐」，從前菜到主菜，用不同部位做成不同菜色，據報導，來用餐的客人還會收到一張<b>感謝狀</b>，感謝他們幫忙減少了農損與噪音。</p>
+
+    <p>聽起來很衝突，對吧？一隻被視為吉祥、美麗的鳥，變成盤子裡的肉。但如果你認真想過外來種這件事，就會知道這其實是全世界都在面對的難題：<b>當一個生命是我們自己帶進來、又養不起的，我們到底該怎麼負責？</b>丟著不管，是讓原生物種替我們付代價；大量撲殺、掩埋，是浪費也是另一種殘忍；那麼，把牠好好地吃掉、物盡其用、並且誠實面對這份「美麗的錯誤」，會不會反而是一種比較誠實的態度？</p>
+
+    <div class="pull">
+      <b>吃，從來不只是吃。<br>它是我們和這片土地、這些生命之間，最誠實的一次對話。</b>
+      <small>這正是「佑在幹嘛？」一直想跟你聊的事</small>
+    </div>
+
+    <p>我沒有標準答案。孔雀料理不會解決金門的孔雀問題——移除的速度依然追不上繁殖。但這道菜逼著每個人去想一件平常不會想的事：<b>你餐桌上的每一口，背後都是一連串關於土地、物種與選擇的決定。</b>這也是為什麼，我想把金門孔雀的故事，好好說給你聽。</p>
+
+    <figure>
+      <div class="clip">
+        <div class="clip-bar"><span class="dot"></span><span class="out">我們的島・公視</span><span class="date">2024.07.06</span></div>
+        <div class="shot"><div class="inner">
+          <span class="kicker">族群控制</span>
+          <div class="head">餐桌上的金門藍孔雀：野外族群數量控制的課題</div>
+          <div class="sub">從十幾隻繁衍到超過兩千隻，多年來已移除上千隻，族群量卻仍持續上升。縣府曾開發孔雀料理，餐廳推出從前菜到主菜的「孔雀大餐」，用餐者還會收到感謝狀——一場關於外來種、飲食與責任的辯證。</div>
+          <div class="byl">專題報導・公視《我們的島》第 1264 集</div>
+        </div></div>
+      </div>
+      <figcaption>來源：公視《我們的島》〈餐桌上的金門藍孔雀｜野外族群數量控制的課題〉（2024 年 7 月 6 日播出）。上圖為依報導內容重製之新聞示意卡，非原始畫面。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CTA 支持贊助 -->
+<section id="support" class="cta">
+  <div class="frame">
+    <div class="cta-box">
+      <div class="band"></div>
+      <div class="inner">
+        <h2>讓重要的事，<br>被更多人看見</h2>
+        <p class="lead">金門孔雀這樣的故事，需要有人願意走到現場、把它好好說清楚。沒有業配、沒有標題殺人，只有實實在在的整理與追蹤。如果你也覺得這件事值得被記住，邀請你支持贊助我們——讓我們走得更遠，把下一個重要的現場帶到你面前。</p>
+        <div class="go"><a class="btn fill big" href="https://portaly.cc/youdo/support" target="_blank" rel="noopener">支持贊助我們走得更遠 →</a></div>
+        <p class="fine">你的每一份支持，都是我們繼續蹲點、繼續說故事的底氣。</p>
+      </div>
+      <div class="band"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="inner">
+    <div class="cols">
+      <div class="brandline">
+        <b>佑在幹嘛？</b>
+        <p>提倡用飲食實踐生態友善的奈米獨立媒體。我們相信，你吃的每一口飯，都跟這座島的未來有關。</p>
+      </div>
+      <ul>
+        <li><a href="https://portaly.cc/youdo/support" target="_blank" rel="noopener">支持贊助</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="srclist">
+    <details>
+      <summary>📚 資料來源與延伸閱讀（點擊展開）</summary>
+      <div class="srcbody">
+        本文為佑在幹嘛？編輯室依下列公開報導整理，並以「年份由新到舊」排序，數據以官方與各家媒體公開資訊為準：<br>
+        ・自由時報〈藍孔雀危害金門農作 今年預估移除1950隻〉（2026.06.01）<br>
+        ・金門日報《金門瞭望》李金生〈「孔雀東南飛」不該只是美麗的錯誤〉（2024.12.27）<br>
+        ・公視《我們的島》〈餐桌上的金門藍孔雀｜野外族群數量控制的課題〉（2024.07.06）<br>
+        ・聯合新聞網／倡議家〈金門藍孔雀為患！數量已破2千隻 獵捕趕不上繁殖速度〉（2024）<br>
+        ・東森新聞〈金門孔雀成災！14隻暴增至2千隻 半夜叫聲超嚇人〉（2023.05.04）<br>
+        ・中央社〈美麗孔雀過多危及金門生態 移除為優先考量〉（2021）<br>
+        ・公視《我們的島》〈戰地藍孔雀｜怎麼會從聖鳥變成破壞在地生態的鳥類〉<br>
+        ・窩窩 wuo-wuo〈逃脫的金門藍孔雀數量暴增十倍 外來種成環境潛在威脅〉、CTWANT、人間福報、中華民國保護動物協會等報導<br>
+        文中新聞卡片為依報導標題與內容重製之示意圖，非原始新聞畫面。
+      </div>
+    </details>
+    <div class="fine" style="max-width:none;padding:24px 0 0">
+      <span>© 2026 佑在幹嘛？　本頁為深度整理內容，圖表與插畫為自製，新聞卡片為示意重製。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
